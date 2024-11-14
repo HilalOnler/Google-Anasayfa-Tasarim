@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Sayfanın karakter setini ve dilini ayarlıyoruz -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
+    <title>Google</title> <!-- Tarayıcı sekmesinde görünecek sayfa başlığı -->
 </head>
-<body>
-    <h1></h1>
+
+<body bgcolor="#FFFFFF"> <!-- Sayfa arka plan rengini beyaz (#FFFFFF) olarak ayarlıyoruz -->
     
+    <!-- Arama formu başlangıcı -->
+    <form method="get" action="https://www.google.com/search">
+        
+        <!-- Google logosunu merkeze hizalıyoruz -->
+        <center>
+            <img src="img/logo.jpg" width="351" height="113" alt="Google!"> <!-- Logo resmi -->
+        </center>
+        
+        <!-- Arama kutusu ve butonlar için tablo oluşturuyoruz -->
+        <center>
+            <table border="0" width="90%"> <!-- Tablo genişliğini %90 olarak ayarlıyoruz -->
+                <tbody>
+                    <tr>
+                        <!-- Tablo hücresinin arka plan rengini gri (#EEEEEE) yapıyoruz -->
+                        <td bgcolor="#EEEEEE" colspan="3">
+                            <center>
+                                <!-- Kullanıcıya arama yapmasını öneriyoruz -->
+                                "Search the web using Google!"
+                                <br>
+                                <!-- Arama kutusu -->
+                                <input type="text" name="q" value size="40">
+                                <br>
+                                <!-- Arama butonları: "Google Search" ve "I'm feeling luck" -->
+                                <input type="submit" name="sa" value="Google Search">
+                                <input type="submit" name="sa" value="I'm feeling luck">
+                                <br>
+                            </center>
+                            
+                            <!-- Abonelik formu (boş ve kullanılamaz durumda) -->
+                            <form method="get" action="https://web.archive.org/web/19981202230410/http://www.findmail.com/cgi-bin/subscribe.py"></form>
+                        </td>
+                    </tr>
+
+                    <!-- İkinci satır: Özel aramalar ve diğer bağlantılar -->
+                    <tr>
+                        <!-- İlk sütun: Özel aramalar için bağlantılar -->
+                        <td width="37%" bgcolor="#7EE5DA"> <!-- Arka plan rengi açık mavi tonlarında -->
+                            <center>
+                                "Special Searches"
+                                <br>
+                                <!-- Stanford ve Linux için özel arama bağlantıları -->
+                                <a href="https://web.archive.org/web/19990224014327/http://www.google.com/stanford">Stanford Search</a><br>
+                                <a href="https://web.archive.org/web/19990221231654/http://www.google.com/linux">Linux Search</a><br>
+                            </center>
+                        </td>
+
+                        <!-- İkinci sütun: Yardım ve diğer sayfalar için bağlantılar -->
+                        <td bgcolor="#70CCC2"> <!-- Arka plan rengi yeşil-mavi tonlarında -->
+                            <center>
+                                <font size="-1">
+                                    <a href="https://web.archive.org/web/19990221212930if_/http://www.google.com/help.html">Help!</a> <br>
+                                    <a href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About Google!</a> <br>
+                                    <a href="https://web.archive.org/web/19990221202430if_/http://www.google.com/company.html">Company Info</a> <br>
+                                    <a href="https://web.archive.org/web/19990224043535if_/http://www.google.com/stickers.html">Google! Logos</a> <br>
+                                </font>
+                            </center>
+                        </td>
+
+                        <!-- Üçüncü sütun: E-posta aboneliği formu -->
+                        <td align="right" bgcolor="#62B3AA"> <!-- Arka plan rengi yeşilimsi mavi -->
+                            <center>
+                                <font size="-1">
+                                    "Get Google!"
+                                    <br> 
+                                    "updates monthly:"
+                                    <br>
+                                    <!-- Abonelik formu için gizli input -->
+                                    <input type="hidden" name="listname" value="google-friends">
+                                    <!-- Kullanıcının e-posta adresi için input alanı -->
+                                    <input type="text" name="emailaddr" value="your e-mail"> <br>
+                                    <!-- Abonelik butonu -->
+                                    <input type="submit" name="SubmitAction" value="Subscribe">
+                                    "&nbsp;&nbsp;"
+                                    <font size="-1">
+                                        <!-- Abonelik arşivi bağlantısı -->
+                                        <a href="https://web.archive.org/web/19981202230410/http://www.findmail.com/list/google-friends/">Archive</a>
+                                    </font>
+                                </font>
+                            </center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <!-- Alt kısımda boşluk bırakmak için -->
+        <p> </p>
+
+        <!-- Telif hakkı bildirimi -->
+        <center>
+            <font size="-1">Copyright &copy;1998 Google Inc.</font>
+        </center>
+    </form> <!-- Arama formu bitişi -->
 </body>
 </html>
